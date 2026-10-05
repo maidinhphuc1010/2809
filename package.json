@@ -1,0 +1,21 @@
+{
+  "name": "react-performance-user-product-management",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite --host 127.0.0.1",
+    "build": "vite build",
+    "preview": "vite preview --host 127.0.0.1",
+    "lighthouse:before": "lighthouse http://127.0.0.1:4173 --output html --output json --output-path ./reports/lighthouse-before.html --chrome-flags=\"--headless --no-sandbox\" --quiet"
+  },
+  "dependencies": {
+    "@vitejs/plugin-react": "latest",
+    "vite": "latest",
+    "react": "latest",
+    "react-dom": "latest"
+  },
+  "devDependencies": {
+    "lighthouse": "latest"
+  }
+}
